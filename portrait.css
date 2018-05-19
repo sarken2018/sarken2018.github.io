@@ -1,0 +1,40 @@
+.profilePic {
+  padding-top: 10px;
+  height: auto;
+  border-radius: 3px;
+}
+.image {
+    padding-bottom: 0px;
+    image-orientation: from-image;
+    width: 100%;
+    margin-left: 0px;
+}
+.bio {
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 3px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 13px;
+  text-align: justify;
+  overflow: scroll;
+}
+section {
+  height: ;
+}
+.wrapper {
+  overflow: scroll;
+}
+h2 {
+  text-align: center;
+}
+.hello {
+  display: block;
+}
+#neil {
+  top: 0;
+  display: block;
+}
+.lastPara {
+  font-size: 13px; line-height: 15px; padding-left:40px; padding-right: 40px; text-align: justify;
+}

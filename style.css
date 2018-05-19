@@ -95,8 +95,12 @@ button:hover {
   text-decoration: none;
   text-align: center;
 }
-
-
+.idea {
+  padding: 30px;
+}
+.lastPara {
+  font-size: 20px; line-height: 30px; padding-left:40px; padding-right: 40px; text-align: justify;
+}
 @media only screen and (max-width: 1250px) {
   .profilePic {
     height: 90%;
