@@ -2,6 +2,7 @@
   padding-top: 10px;
   height: auto;
   border-radius: 3px;
+  width: 85%;
 }
 .image {
     padding-bottom: 0px;
@@ -17,13 +18,16 @@
   text-align: center;
   font-size: 13px;
   text-align: justify;
+  height: 60%;
   overflow: scroll;
+
 }
 section {
   height: auto;
 }
 .wrapper {
   overflow: scroll;
+  height: 70%;
 }
 h2 {
   text-align: center;

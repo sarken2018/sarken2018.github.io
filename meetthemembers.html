@@ -1,6 +1,8 @@
 <html>
 <head>
   <title>Sarken for Sophomore Caucus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="portrait.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -22,20 +24,20 @@
     <div class='header'>
       <div class="d-flex justify-content-center">
         <div class="p-2 tab"><a href = "index.html">home</a></div>
-        <div class="p-2 tab"><a href = "meetthemembers.html">meet the members</a></div>
+        <div class="p-2 tab"><a href = "meettheteam.html">meet the members</a></div>
         <div class="p-2 tab"><a href = "ourpurpose.html">our purpose</a></div>
         <div class="p-2 tab"><a href = "contact.html">contact us</a></div>
       </div><br>
-      <center><h1>Meet the Members</h1></center>
+      <center><h1>Meet the Team</h1></center>
       <section>
         <center>
-        <div class = 'd-flex flex-row justify-content-center'>
-          <div class = 'p-2'>
-            <div class = 'profilePic'>
+        <div class = 'd-flex flex-row justify-content-center hello'>
+          <div class = 'p-2 hello'>
+            <div class = 'profilePic '>
             <img class = 'profilePic' src = 'images/mayhathaway.jpg'>
           </div>
           </div>
-          <div class = 'p-2'>
+          <div class = 'p-2 hello'>
             <div class ='bio'>
               <h2>May Hathaway</h2>
             <p>Hello, I’m May, and I’m so honored to be a part of the Sarken campaign! Neil and Sarai are both such incredible people, both in terms of academic achievements and personality, and I believe that they would be wonderful leaders of Sophomore Caucus. They both have strong work ethics, and are always willing to help out a friend in need. Our student body need hard-working leaders who will take our opinions to heart, and there is no one better suited to the task. I am so proud to be a campaign manager for the Sarken campaign. I am a member of the cross country team and the track team, and I have also played tennis for nearly ten years. Additionally, I am an avid swimmer and flutist as well as a member of the Spectator’s Copy department and president of the upcoming Stuyvesant Mixed Race Student Coalition. I can say without a doubt that Neil and Sarai are the best people to represent a student body as diverse as ours, and I trust that they will represent all of our interests. </p>
@@ -46,13 +48,13 @@
       </section>
       <section>
         <center>
-        <div class = 'd-flex flex-row justify-content-center'>
-          <div class = 'p-2'>
+        <div class = 'd-flex flex-row justify-content-center hello'>
+          <div class = 'p-2 hello'>
             <div class = 'profilePic'>
             <img class = 'profilePic' src = 'images/mirandalepri.jpg'>
           </div>
           </div>
-          <div class = 'p-2'>
+          <div class = 'p-2 hello'>
             <div class ='bio'>
               <h2>Miranda Lepri</h2>
             <p>Hi, I’m Miranda, and I’m really excited to announce that I’m a part of the Sarken 2018 campaign! From the moment I heard about Neil and Sarai’s campaign, I knew it was something I wanted to be a part of. Both of them are so dedicated in every facet of their lives, and are so supportive of and open to everyone they meet, and I firmly believe that it’s qualities like this that are so key in leadership. As for myself, I’m a dedicated debater on the Stuy Public Forum team, a writer for the A&E and Opinions departments of the Spectator, so I have a lot of experience with engaging in discourse, and I’ve learned how to listen and absorb other people’s opinions, as well as fight for my own. I also play the piano and upright bass, and I’m a sketch artist in my free time. I have total faith in this campaign, and in Neil and Sarai, to advocate and fight for what the student body wants and needs, and serve the sophomore class. </p>
@@ -63,13 +65,13 @@
       </section>
       <section>
         <center>
-        <div class = 'd-flex flex-row justify-content-center'>
-          <div class = 'p-2'>
+        <div class = 'd-flex flex-row justify-content-center hello'>
+          <div class = 'p-2 hello'>
             <div class = 'profilePic'>
             <img class = 'profilePic' src = 'images/annerhee.jpg'>
           </div>
           </div>
-          <div class = 'p-2'>
+          <div class = 'p-2 hello'>
             <div class ='bio'>
               <h2>Anne Rhee</h2>
             <p>Hi, I’m Anne, a proud member of the Sarken ‘18 team! When I first came to Stuy, I immediately saw the importance of representing a student body with such diverse interests. Stuy is usually defined as a STEM-oriented school, but also makes it possible for people with interest in the humanities like me to be captivated with the Stuy lifestyle. For example, I am an avid policy debater, as well as a writer for the Spectator’s Opinions department. I’ve also been a violinist for almost eleven years and play in the school’s orchestra. Neil and Sarai are two of the most genuine and caring people I know, as well as passionate about helping others and forging connections. These qualities are what I believe define true and successful leaders, and I believe they are fully competent of representing the student body’s best and diverse interests and needs.</p>
@@ -120,4 +122,14 @@
     </div>
   </div>
 </body>
+<script>
+function resize() {
+  if ($(window).width() > 500) {
+  }
+  else {$('.hello').removeClass('p-2').addClass("wrapper");
+  $('.hello').removeClass('d-flex flex-row justify-content-center');
+
+}
+}
+</script>
 </html>
