@@ -98,6 +98,9 @@ button:hover {
 .idea {
   padding: 30px;
 }
+.purpose {
+  height: auto; padding: 40px; padding-left: 90px; padding-right:90px; text-align: justify
+}
 .lastPara {
   font-size: 17px; line-height: 30px; padding-left: 100px; padding-right: 100px; text-align: justify;
 }
@@ -189,8 +192,12 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 1250px) {
+
+@media only screen and (max-width: 500px) {
   .lastPara {
     font-size: 17px; line-height: 22px; padding-left: 40px; padding-right: 40px; text-align: justify;
+  }
+  .purpose {
+    padding: 20px;
   }
 }

@@ -2,7 +2,9 @@
     width: 90%;
   height: auto;
   border-radius: 3px;
+
 }
+
 .fluid-container {
   height: auto;
 }
@@ -42,4 +44,10 @@ h2 {
 }
 .lastPara {
   font-size: 13px; line-height: 15px; padding-left:0px; padding-right: 0px; text-align: justify;
+}
+.break {
+  height: 50px;
+}
+.purpose {
+  padding: 20px;
 }
