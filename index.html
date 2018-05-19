@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Sarken for Sophomore Caucus</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Patua+One">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+  <link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Muli:300,700">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="ScrollMagic.js"></script>
+  <script src="ScrollMagic.min.js"></script>
+  <script src=" debug.addIndicators.js"></script>
+</head>
+<body>
+  <div class ="fluid-container">
+    <div class='header'>
+      <div class="d-flex justify-content-center">
+        <div class="p-2 tab"><a href = "index.html">home</a></div>
+        <div class="p-2 tab"><a href = "meetthemembers.html">meet the members</a></div>
+        <div class="p-2 tab"><a href = "ourpurpose.html">our purpose</a></div>
+        <div class="p-2 tab"><a href = "contact.html">contact us</a></div>
+      </div>
+    </div>
+    <section style = 'width: auto' id = 'home'>
+
+      <div class="fluid-container">
+        <center><img src = 'images/coverpage.png' style = 'width: 95%'></center>
+      </div>
+    </section>
+    <section>
+      <center>
+        <div class = 'd-flex flex-row justify-content-center'>
+          <div class = 'p-2'>
+            <div class = 'profilePic'>
+              <img class = 'profilePic' src = 'images/neilsarkar.jpg'>
+            </div>
+          </div>
+          <div class = 'p-2'>
+            <div class ='bio' id = 'neilSarkar'>
+              <h2>Neil Sarkar</h2>
+              <p>Hi, I’m Neil! I am a determined, hardworking, and empathetic leader. At Stuy, I’m a part of the Speech and Debate Team (Public Forum) and just joined the News department of the Spectator. I love playing basketball and run a blog in my free time. In middle school, I was an active part our the school community and was elected to the student council for 3 years and was a part of the Manhattan Student Leadership Council. I also ran a fundraising drive that donated money to the International Rescue Committee which is dedicated to helping refugees. Sarai and I met at the debate interest meeting and I immediately noticed her caring and bubbly personality. We are running because we truly care and can best represent our grade. Our platform outlines specific steps that we will take to make our school a better place. Stuy is an amazing school but we can all agree that there are some important changes that need to be made. Sarai and I will represent each and everyone one of you and we hope that you will support us in making Stuy even better. We hope to be a part of Stuyvesant’s future by leading the sophomore caucus. </p>
+            </div>
+          </center>
+        </div>
+      </div>
+    </section>
+    <section>
+      <center>
+        <div class = 'd-flex flex-row justify-content-center'>
+          <div class = 'p-2'>
+            <div class = 'profilePic'>
+              <img class = 'profilePic' src = 'images/saraipridgen.jpg'>
+            </div>
+          </div>
+          <div class = 'p-2'>
+            <div class ='bio' id = 'neilSarkar'>
+              <h2>Maria-Sarai Pridgen</h2>
+              <p>
+                Hey, I’m Sarai! I’m an avid reader with a passion for helping others. I’ve been a part of student government before (I was the president of student council at my middle school) and am currently running to be Vice President of Sophomore Caucus. My extracurriculars include track, Lincoln-Douglas debate, chorus, and I write in my free time. I love making study guides, and also have a love for languages, and am currently working on mastering French in addition to Spanish and English. Ever since the moment I stepped into Stuyvesant, I haven’t ceased to be amazed by the incredibly smart, compassionate, and talented individuals that go to our school. I’ve truly never been a part of such an incredibly giving community, and I’m proud to say that I would like to help lead it. Neil and I want to do everything in our power to help our school flourish and best support our fellow students. We have outlined specific parts of Stuyvesant that we’d like to work to improve in our platform, though we are open to all suggestions. More than anything Neil and I want to do our very best to contribute to the school that has helped us so much by leading Sophomore Caucus.
+              </p>
+            </div>
+          </div>
+        </div></center>
+      </section>
+      <div id = 'footer'>
+      </div>
+    </div>
+  </body>
+  <script>
+  var controller = new ScrollMagic.Controller();
+
+  // create a scene
+  new ScrollMagic.Scene({
+    duration: 500,    // the scene should last for a scroll distance of 100px
+    offset: 50        // start this scene after scrolling for 50px
+  })
+  .setPin("#home")
+  .addTo(controller);
+  // pins the element for the the scene's duration
+  // create a scene
+  new ScrollMagic.Scene({
+    duration: 500   // the scene should last for a scroll distance of 100px
+    // start this scene after scrolling for 50px
+  })
+  .setPin("#trigger1")
+  .addTo(controller);
+  console.log("controller")
+
+  EXIF.getData(image, function() {
+    var orientation = EXIF.getTag(this, "Orientation");
+
+    if(orientation == 6)
+    $(image).css('transform', 'rotate(90deg)')
+  });
+  </script>
+  </html>
