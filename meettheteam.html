@@ -2,7 +2,6 @@
 <head>
   <title>Sarken for Sophomore Caucus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="portrait.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -18,6 +17,7 @@
   <link rel="stylesheet" type="text/css"
   href="https://fonts.googleapis.com/css?family=Muli:400,700">
   <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="portrait.css">
 </head>
 <body>
   <div class ="fluid-container">
@@ -82,13 +82,13 @@
       </section>
       <section>
         <center>
-        <div class = 'd-flex flex-row justify-content-center'>
-          <div class = 'p-2'>
+        <div class = 'd-flex flex-row justify-content-center hello'>
+          <div class = 'p-2 hello'>
             <div class = 'profilePic'>
             <img class = 'profilePic' src = 'images/justinsword.jpg'>
           </div>
           </div>
-          <div class = 'p-2'>
+          <div class = 'p-2 hello'>
             <div class ='bio'>
               <h2>Justin Sword</h2>
             <p>Hi! My name is Justin Sword. I am a manager for the Sarken 2018 campaign, an avid member of the Stuyvesant Public Forum Debate team, a member of the Spectator News department, and of the Stuyvesant Board Games Club. I am very excited for the 2018 campaign because I know Neil and Sarai have the passion and dedication necessary to create real change in this school. For that very reason, the hope for change, I joined the Sarken campaign.</p>
@@ -99,13 +99,13 @@
       </section>
       <section>
         <center>
-        <div class = 'd-flex flex-row justify-content-center'>
-          <div class = 'p-2'>
+        <div class = 'd-flex flex-row justify-content-center hello'>
+          <div class = 'p-2 hello'>
             <div class = 'profilePic'>
             <img class = 'profilePic' src = 'images/chloeterestchenko.jpg'>
           </div>
           </div>
-          <div class = 'p-2'>
+          <div class = 'p-2 hello'>
             <div class ='bio'>
               <h2>Chloe Terestchenko</h2>
             <p>Hi, I’m Chloe! I’m delighted to be a member of the Sarken 2018 campaign. Both Neil and Sarai are extremely dedicated, smart, and diverse, in both their studies and extracurriculars, and will accomplish a strong student government for our diverse grade. I’m extremely honored to be a campaign manager, and as well as being a committed student, I play various sports. I am currently on the track team and I am a competitive equestrian. I’ve been competing for nine years and travel around the country for the sport. Additionally, I have recently taken up scuba diving outside of school. At a school as large as Stuyvesant, it is important to have people like Sarai and Neil, who are so eager, caring, and hard-working, to create change and include everyone’s needs. Undoubtedly, they are the best team to represent the rising Sophomore student body.</p>
@@ -114,7 +114,7 @@
       </div>
         </div>
       </section>
-      <div class ='section' style = 'height: 0%'>
+      <div class ='section' style = 'height: '>
       </div>
       <div id = 'footer'>
         <div class ='container'><p style = 'text-align: center; padding-top: 70px; color: #7c7c7c'>Developed by Erin Lee.</p></div>
@@ -128,8 +128,12 @@ function resize() {
   }
   else {$('.hello').removeClass('p-2').addClass("wrapper");
   $('.hello').removeClass('d-flex flex-row justify-content-center');
+}
+}
 
-}
-}
+$(document).ready( function() {
+    $(window).resize(resize);
+    resize();
+});
 </script>
 </html>

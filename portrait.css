@@ -1,8 +1,10 @@
 .profilePic {
-  padding-top: 10px;
+    width: 90%;
   height: auto;
   border-radius: 3px;
-  width: 85%;
+}
+.fluid-container {
+  height: auto;
 }
 .image {
     padding-bottom: 0px;
@@ -26,7 +28,6 @@ section {
   height: auto;
 }
 .wrapper {
-  overflow: scroll;
   height: 70%;
 }
 h2 {
@@ -40,5 +41,5 @@ h2 {
   display: block;
 }
 .lastPara {
-  font-size: 13px; line-height: 15px; padding-left:40px; padding-right: 40px; text-align: justify;
+  font-size: 13px; line-height: 15px; padding-left:0px; padding-right: 0px; text-align: justify;
 }
