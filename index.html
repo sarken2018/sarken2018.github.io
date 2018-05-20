@@ -2,7 +2,7 @@
 <head>
   <title>Sarken for Sophomore Caucus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen and (max-width: 500px)" href="portrait.css">
+  <link rel="stylesheet" type="text/css" media="screen and (max-width: 750px)" href="portrait.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -14,16 +14,22 @@
   <link rel="stylesheet" type="text/css"
   href="https://fonts.googleapis.com/css?family=Josefin+Sans">
   <link rel="stylesheet" type="text/css"
-  href="https://fonts.googleapis.com/css?family=Muli:300,700">
+  href="https://fonts.googleapis.com/css?family=Muli:400,700">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="ScrollMagic.js"></script>
   <script src="ScrollMagic.min.js"></script>
   <script src=" debug.addIndicators.js"></script>
+  <style>
+    a {
+      font-weight: 400;
+    }
+  </style>
 </head>
 <body>
   <div class ="fluid-container">
     <div class='header'>
       <div class="d-flex justify-content-center">
+        <a href = "index.html"><img src = 'images/duo.jpg' class = 'circle' style = ''</a>
         <div class="p-2 tab"><a href = "index.html">home</a></div>
         <div class="p-2 tab"><a href = "meettheteam.html">meet the team</a></div>
         <div class="p-2 tab"><a href = "ourpurpose.html">our purpose</a></div>
@@ -38,31 +44,33 @@
     </section>
     <section>
       <center>
-        <div class = 'd-flex flex-row justify-content-center hello' id = 'neil'>
+        <div class = 'd-flex flex-row justify-content-center hello'>
           <div class = 'p-2 hello'>
-            <div class = 'profilePic'>
+            <div class = 'profile'>
               <img class = 'profilePic' src = 'images/neilsarkar.jpg'>
             </div>
           </div>
-          <div class = 'p-2 hello'>
+          <div class = 'block'></div>
+          <div class = 'p-2 hello'><br>
             <div class ='bio' id = 'neilSarkar'>
               <h2>Neil Sarkar</h2>
               <p>Hi, I’m Neil! I am a determined, hardworking, and empathetic leader. At Stuy, I’m a part of the Speech and Debate Team (Public Forum) and just joined the News department of the Spectator. I love playing basketball and run a blog in my free time. In middle school, I was an active part our the school community and was elected to the student council for 3 years and was a part of the Manhattan Student Leadership Council. I also ran a fundraising drive that donated money to the International Rescue Committee which is dedicated to helping refugees. Sarai and I met at the debate interest meeting and I immediately noticed her caring and bubbly personality. We are running because we truly care and can best represent our grade. Our platform outlines specific steps that we will take to make our school a better place. Stuy is an amazing school but we can all agree that there are some important changes that need to be made. Sarai and I will represent each and everyone one of you and we hope that you will support us in making Stuy even better. We hope to be a part of Stuyvesant’s future by leading the sophomore caucus. </p>
-            </div>
-          </center>
-        </div>
-      </div>
-    </section>
-    <div class ='addSection'>
+              </div>
+          </div>
+        </div></center>
+      </section>
+    <div class = 'block'></div>
+    <div class ='addSection'><section style = 'height: 150px;'></section>
     </div>
     <section>
       <center>
         <div class = 'd-flex flex-row justify-content-center hello'>
           <div class = 'p-2 hello'>
-            <div class = 'profilePic'>
+            <div class = 'profile'>
               <img class = 'profilePic' src = 'images/saraipridgen.jpg'>
             </div>
           </div>
+          <div class = 'block'></div>
           <div class = 'p-2 hello'><br>
             <div class ='bio' id = 'neilSarkar'>
               <h2>Maria-Sarai Pridgen</h2>
@@ -82,10 +90,11 @@
   <script>
 
   function resize() {
-    if ($(window).width() > 500) {
+    if ($(window).width() > 750) {
     }
     else {$('.hello').removeClass('p-2').addClass("wrapper");
     $('.hello').removeClass('d-flex flex-row justify-content-center');
+
   }
 }
 
